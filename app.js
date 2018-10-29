@@ -19,9 +19,9 @@ app.use(bodyParser.urlencoded({ extended: false }));
 app.use(express.static(path.join(__dirname, 'public')));
 
 
-//router setting
 require('./routes/roomcode')(app, Rooms, randomstring);
 require('./routes/room')(app, Rooms, io)
+requrie('./routes/idea')(app, Rooms)
 //router setting
 
 

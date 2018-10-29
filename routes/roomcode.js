@@ -13,7 +13,7 @@ function roomcode(app, Rooms, randomstring) {
       subject: req.body.subject
     }
     new_room = new Rooms(new_room)
-    var result = await new_room.save();
+    var result = await new_room.save()
     if(!result) return res.status(500).json({message: "ERR!"})
     else return res.status(200).json({code: code})
   })
