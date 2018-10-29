@@ -21,7 +21,7 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 require('./routes/roomcode')(app, Rooms, randomstring);
 require('./routes/room')(app, Rooms, io)
-requrie('./routes/idea')(app, Rooms)
+require('./routes/idea')(app, Rooms)
 //router setting
 
 
